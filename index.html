@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	<link href="styles/style.css" rel="stylesheet">
+	<title>Здравей, Пролет!</title>
+</head>
+<body>
+<div class="main">
+	<header>
+	<h1> Пролетта дойде!</h1>
+	<p>Цветята се събуждат, за да ти кажат "Здравей!"</p>
+	</header>
+	<img src="images/spring.jpg" alt="nice spring flowers">
+	<div class="text">
+		<p><a href="https://otkrovenia.com/bg/eseta/proletta-naj-krasiviyat-sezon-v-godinata" target="_blank">Пролетта</a> е тук с нейните красиви:</p>
+		<ul>
+			<li>цветове</li>
+			<li>цветя</li>
+			<li>птичи песни</li>
+			<li>бръмчащи живинки</li>
+			<li>топлина</li>
+			<li><button onclick="typeWriter()">и също</button></li>
+			<li id="write"></li>
+		</ul>
+	</div>
+
+	<script> var i = 0;
+		var txt = '  Обичам те. Честита пролет!'; /* The text */
+		var speed = 50; /* The speed/duration of the effect in milliseconds */
+		
+		function typeWriter () {
+		  if (i < txt.length) {
+			document.getElementById('write').innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}</script>
+</div>
+
+</body>
+</html>
